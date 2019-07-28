@@ -1,0 +1,27 @@
+<html>
+ <head>
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+ </head>
+
+  <body>
+    <div id="app">
+
+    <table>
+    <thead>
+    <tr>
+      <th @click="sortBy(0)">table1</th>
+      <th @click="sortBy(1)">table2</th>
+      <th @click="sortBy(2)">table3</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr v-for="num in numdata">
+      <td v-for="item in num">{{item}}</td>
+        </tr>
+      </tbody>
+</table> 
+
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
